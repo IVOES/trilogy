@@ -1,0 +1,104 @@
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 3) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 4) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 5) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:175:26: warning: %u in format string (no. 6) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u %2u:%2u:%2u.%6s", &year, &month, &day, &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:206:26: warning: %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u", &year, &month, &day);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:206:26: warning: %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u", &year, &month, &day);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:206:26: warning: %u in format string (no. 3) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%4u-%2u-%2u", &year, &month, &day);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:230:26: warning: %u in format string (no. 1) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%2u:%2u:%2u.%6s", &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:230:26: warning: %u in format string (no. 2) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%2u:%2u:%2u.%6s", &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cast.c:230:26: warning: %u in format string (no. 3) requires 'unsigned int *' but the argument type is 'signed int *'. [invalidScanfArgType_int]
+            int tokens = sscanf(cstr, "%2u:%2u:%2u.%6s", &hour, &min, &sec, msec_char);
+                         ^
+contrib/ruby/ext/trilogy-ruby/cext.c:749:13: style: Local variable 'rc' shadows outer variable [shadowVariable]
+        int rc = trilogy_read_row(&ctx->conn, row_values);
+            ^
+contrib/ruby/ext/trilogy-ruby/cext.c:662:9: note: Shadowed declaration
+    int rc;
+        ^
+contrib/ruby/ext/trilogy-ruby/cext.c:749:13: note: Shadow variable
+        int rc = trilogy_read_row(&ctx->conn, row_values);
+            ^
+contrib/ruby/ext/trilogy-ruby/cext.c:632:0: information: Skipping configuration 'CLOCK_MONOTONIC;HAVE_CLOCK_GETTIME' since the value of 'CLOCK_MONOTONIC' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (clock_gettime(CLOCK_MONOTONIC, ts) == -1) {
+^
+src/blocking.c:15:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/blocking.c:213:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/blocking.c:228:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/blocking.c:330:9: style: The scope of the variable 'rc' can be reduced. [variableScope]
+    int rc;
+        ^
+src/socket.c:554:0: information: Skipping configuration 'SSL_F_TLS_PROCESS_SERVER_CERTIFICATE' since the value of 'SSL_F_TLS_PROCESS_SERVER_CERTIFICATE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        ERR_put_error(ERR_LIB_SSL, SSL_F_TLS_PROCESS_SERVER_CERTIFICATE, SSL_R_CERTIFICATE_VERIFY_FAILED, NULL, 0);
+^
+src/socket.c:163:0: information: Skipping configuration 'TCP_KEEPCNT' since the value of 'TCP_KEEPCNT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            if (setsockopt(sock->fd, IPPROTO_TCP, TCP_KEEPCNT, (void *)&flags, sizeof(flags)) < 0) {
+^
+src/socket.c:147:0: information: Skipping configuration 'TCP_KEEPIDLE' since the value of 'TCP_KEEPIDLE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            if (setsockopt(sock->fd, IPPROTO_TCP, TCP_KEEPIDLE, (void *)&flags, sizeof(flags)) < 0) {
+^
+src/socket.c:155:0: information: Skipping configuration 'TCP_KEEPINTVL' since the value of 'TCP_KEEPINTVL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            if (setsockopt(sock->fd, IPPROTO_TCP, TCP_KEEPINTVL, (void *)&flags, sizeof(flags)) < 0) {
+^
+test/runner.c:7:1: style: Variable 'diff_mark' is assigned a value that is never used. [unreadVariable]
+GREATEST_MAIN_DEFS();
+^
+test/runner.c:7:0: style: The function 'GREATEST_SET_SETUP_CB' is never used. [unusedFunction]
+
+^
+test/runner.c:7:0: style: The function 'GREATEST_SET_TEARDOWN_CB' is never used. [unusedFunction]
+
+^
+contrib/ruby/ext/trilogy-ruby/cext.c:1033:0: style: The function 'Init_cext' is never used. [unusedFunction]
+
+^
+test/runner.c:7:0: style: The function 'greatest_get_report' is never used. [unusedFunction]
+
+^
+test/runner.c:7:0: style: The function 'greatest_get_verbosity' is never used. [unusedFunction]
+
+^
+test/runner.c:7:0: style: The function 'greatest_set_verbosity' is never used. [unusedFunction]
+
+^
+src/blocking.c:108:0: style: The function 'trilogy_connect_sock' is never used. [unusedFunction]
+
+^
+src/client.c:651:0: style: The function 'trilogy_drain_results' is never used. [unusedFunction]
+
+^
+src/blocking.c:311:0: style: The function 'trilogy_stmt_bind_data' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
